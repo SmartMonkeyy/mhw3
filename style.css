@@ -1,0 +1,113 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+:root{
+    --div-color: #f4f4f4;
+}
+
+@media (max-width: 600px){
+    @viewport {
+        zoom: 100%;
+        width: 100vw; /*Larghezza del viewport = larghezza dispositivo*/
+      }
+}
+
+@media (max-width: 700px){
+
+    article {
+        width: 95%;
+      }
+
+    header div span {
+        background-color: white;
+    }
+
+}
+
+@media (max-width: 500px){
+    .choice-grid div {
+        width: 49%;
+    }
+}
+
+.question-name {
+    background-size: cover;
+  }
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.choice-grid div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--div-color);
+    border: 1px solid #dcdcdc;
+    width: 32.5%;
+    padding: 10px;
+    margin: 0 2px 20px 2px;
+}
+
+.choice-grid div:hover{
+    cursor: pointer;
+}
+
+.opa{
+    opacity: 0.6;
+}
+
+#results{
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#results.hidden{
+    display: none;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+#formquote{
+    margin: 30px 0;
+    text-align: center;
+}
+
+#formquote p{
+    font-style: italic;
+}
+
+#playlist{
+    text-align: center;
+}
+
+#playlist img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#playlist h3,h5{
+    margin: 0 0;
+}
+
+#playlist a{
+    font-style: italic;
+}
+
+#playlist.hidden{
+    display: none;
+}
