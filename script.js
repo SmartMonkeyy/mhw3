@@ -217,7 +217,6 @@ function rewindAll(event){
 }
 
 function search(event){
-    const name = "BTC"
     event.preventDefault();
     url = "https://api.quotable.io/random"; //https://github.com/lukePeavey/quotables
     fetch(url).then(onResponse).then(outPut);
@@ -244,7 +243,6 @@ function outPut(json){
 
 function onTokenJson(json){
     let token = json.access_token;
-    let limit = 15;
 
     fetch("https://api.spotify.com/v1/search?type=playlist&q=" + resultChoice, {
             headers:{
