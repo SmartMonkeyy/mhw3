@@ -1,5 +1,3 @@
-/* TODO: inserite il codice JavaScript necessario a completare il MHW! */
-
 const matches = {
     charismatic: 0,
     competitive: 1,
@@ -46,15 +44,12 @@ function selectDiv(event){
     generalId = generalDiv.dataset.questionId;
     generalChoice = generalDiv.dataset.choiceId;
 
-    /*first question*/
     const divlist1 = document.querySelectorAll("div[data-question-id='one']");
     const check1 = document.querySelectorAll("div[data-question-id='one'] > img.checkbox");
 
-    /*second question*/
     const divlist2 = document.querySelectorAll("div[data-question-id='two']");
     const check2 = document.querySelectorAll("div[data-question-id='two'] > img.checkbox");
 
-    /*third question*/
     const divlist3 = document.querySelectorAll("div[data-question-id='three']");
     const check3 = document.querySelectorAll("div[data-question-id='three'] > img.checkbox");
 
@@ -218,7 +213,7 @@ function rewindAll(event){
 
 function search(event){
     event.preventDefault();
-    url = "https://api.quotable.io/random"; //https://github.com/lukePeavey/quotables
+    url = "https://api.quotable.io/random";
     fetch(url).then(onResponse).then(outPut);
 }
 
